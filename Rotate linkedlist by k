@@ -1,0 +1,9 @@
+class Solution {
+    public static void rotateByK(LinkedList<Integer> ll, int k) {
+        for(int i=0;i<k;i++)
+        {
+            ll.addFirst(ll.getLast());
+            ll.removeLast();
+        }
+    }
+}
